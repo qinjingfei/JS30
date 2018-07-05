@@ -35,8 +35,6 @@ a total of ${card.amount * card.unitprice} bucks?`
 
 [详细解答](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit)
 
-
-
 ## 有用的链接
 [JavaScript Drum Kit 中文指南](https://github.com/soyaine/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit)
 
@@ -47,3 +45,94 @@ a total of ${card.amount * card.unitprice} bucks?`
 [StringInterpolation](http://es6-features.org/#StringInterpolation)
 
 [Constants](http://es6-features.org/#Constants)
+
+---
+
+
+# jQuery版本
+
+[效果](https://qinjingfei.github.io/JS30/01%20-%20JavaScript%20Drum%20Kit/index-jquery.html)
+
+
+## 知识点
+
+ ### jQuery对象与DOM对象
+ 
+ jQuery 对象就是通过jQuery包装DOM对象后产生的对象。jQuery对象是jQuery独有的。
+ jQuery 对象中无法使用DOM对象的任何方法。同样，DOM对象也不能使用jQuery里的方法
+
+ ```
+  var domObj = document.getElementById("id") // DOM对象
+  var $jqueryObj = $('#id') //jquery 对象
+ ```
+
+ * jQuery对象转成DOM对象
+
+ ```
+ //命名
+ var $variable = jQuery 对象
+ var variable  = DOM 对象
+ ```
+ jQuery 提供两种方法将jQuery对象转化为DOM对象，`[index]`和`get(index)`
+
+ ```
+ var $cr = $("#cr")  //jQuery对象
+ var cr = $cr[0]     // DOM对象
+ ```
+
+```
+ var $cr = $("#cr")  //jQuery对象
+ var cr = $cr.get(0) // DOM对象
+```
+
+* DOM对象转成jQuery对象
+
+对于一个DOM对象，只需要用`$()`吧DOM对象包装起来，就可以获得一个jQuery对象。
+
+```
+var cr = document.getElementById("cr") //DOM对象
+var $cr = $(cr)                        //jQuery对象
+
+ ```
+
+### .on()
+
+```
+.on( events [, selector ] [, data ], handler )
+```
+Description: Attach an event handler function for one or more events to the selected elements.
+[具体请看.on()](http://devdocs.io/jquery/on)
+
+### .each()
+
+```
+.each( function )
+```
+Description: Iterate over a jQuery object, executing a function for each matched element.
+
+[具体请看.each()](http://devdocs.io/jquery/each)
+
+
+### 箭头函数产生的错误
+
+```
+ $keys.each(()=>$(this).on('transitionend',removeTransition)）//runtime error
+
+ function removeTransition(e,){  
+    if(e.originalEvent.propertyName!== 'transform') return
+    $(this).removeClass('playing')
+  }
+```
+在上面已经说过了，注意函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+箭头函数中`this`指向全局变量`window`
+![Alt text](./1.png)
+
+正确的做法:
+```
+$keys.each(function () {
+     $(this).on('transitionend',removeTransition)
+    })
+```
+
+上面函数中`this` 指向$keys数组中的对象
+![Alt text](./2.png)
