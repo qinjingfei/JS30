@@ -125,7 +125,7 @@ Description: Iterate over a jQuery object, executing a function for each matched
 ```
 在上面已经说过了，注意函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
 箭头函数中`this`指向全局变量`window`
-<img src="./1.png" alt="" style="max-width:40%;">
+<img src="./1.png" alt="" style="width:40%;">
 
 正确的做法:
 ```
@@ -135,4 +135,4 @@ $keys.each(function () {
 ```
 
 上面函数中`this` 指向$keys数组中的对象
-<img src="./2.png" alt="" style="max-width:40%;">
+<img src="./2.png" alt="" style="width:40%;">
