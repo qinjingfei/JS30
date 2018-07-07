@@ -7,6 +7,8 @@
 简单的介绍一些Array.prototype的方法， 比如 Array.prototype.filter, Array.prototype.map, Array.prototype.reduce等（这些都被常用于higher order function）
 在我以前学的CMPS112 Comparative Languages 里很像，都是functional language. 因为，我比较熟悉这些方法，我就列举一些例子.
 
+[CMPS112笔记](https://www2.ucsc.edu/courses/cmps112-wm/:/Lecture-notes/)
+
 ## 要点
 
 * filter
@@ -56,7 +58,7 @@ const totalYears = inventors.reduce((total, inventor) => {
 [Fun Fun Function Map](https://www.youtube.com/watch?v=bCqtb-Z5YGQ)
 
 
-* sort && ES6 arry matching
+* sort && ES6 destructuring
 
 Example:
 
@@ -79,4 +81,31 @@ bFirst = 'Carl'
 
 ```
 
+为什么我们要使用destructuring?
+
+Example:
+
+```
+makeSound({weight: 23, sound:'woof'})
+
+// without destructuring
+
+function makeSound(options){
+	var species = options.species || 'animal'
+	var sound = options.sound
+	console.log('The' + species + ' says' + sound + '!')
+}
+
+//with destructuring
+
+functiong makeSound({species="animal", sound}){
+	console.log('The' + species + ' says' + sound + '!')
+}
+
+```
+`destructuring 可以使代码更简洁，易读`
+
+
 [ES 6 array matching](http://es6-features.org/#ArrayMatching)
+
+[Destucturing]（https://www.youtube.com/watch?v=PB_d3uBkQPs&t=330s）
