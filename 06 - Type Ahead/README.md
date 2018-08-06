@@ -11,16 +11,16 @@
 ## 知识点
  
 * Promise
- * fetch 	
+ 	 * fetch 	
 
 * Array
- * filter()
- * map()
- * push()
- * join()
+	* filter()
+ 	* map()
+ 	* push()
+ 	* join()
 * RegExp
- * match()
- * replace()
+ 	* match()
+ 	* replace()
 
 
 
