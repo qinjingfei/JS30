@@ -11,3 +11,4 @@ NO| Guide | Demo
 5|[Flex Panel Gallery指南](https://qinjingfei.github.io/JS30/05%20-%20Flex%20Panel%20Gallery)|[Flex Panel Gallery效果](https://qinjingfei.github.io/JS30/05%20-%20Flex%20Panel%20Gallery/index-jing.html)
 6|[Type Ahead指南](https://qinjingfei.github.io/JS30/06%20-%20Type%20Ahead) |[Type Ahead效果](https://qinjingfei.github.io/JS30/06%20-%20Type%20Ahead/index-jing.html) |
 7 | [Array Cardio Day 2指南](https://qinjingfei.github.io/JS30/07%20-%20Array%20Cardio%20Day%202)  | [Array Cardio Day 2 效果](https://qinjingfei.github.io/JS30/07%20-%20Array%20Cardio%20Day%202/index-jing.html)|
+9 | [Dev Tools Domination指南](https://qinjingfei.github.io/JS30/09%20-%20Dev%20Tools%20Domination)  | [Dev Tools Domination效果](https://qinjingfei.github.io/JS30/09%20-%20Dev%20Tools%20Domination/index-jing.html)|

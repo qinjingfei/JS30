@@ -9,19 +9,19 @@
  
  
 ## 知识点
- 
+
 * Promise
- 	 * fetch 	
+	* fetch()
 
-* Array
-	* filter()
- 	* map()
- 	* push()
- 	* join()
+* Array 
+  * filter()
+  * map()
+  * push()
+  * join()
+
 * RegExp
- 	* match()
- 	* replace()
-
+	* match()
+	* replace()
 
 
 这个比较简单。有任何问题请看链接里的笔记。
