@@ -13,4 +13,5 @@ NO| Guide | Demo
 7 | [Array Cardio Day 2指南](https://qinjingfei.github.io/JS30/07%20-%20Array%20Cardio%20Day%202)  | [Array Cardio Day 2 效果](https://qinjingfei.github.io/JS30/07%20-%20Array%20Cardio%20Day%202/index-jing.html)
 9 | [Dev Tools Domination指南](https://qinjingfei.github.io/JS30/09%20-%20Dev%20Tools%20Domination)  | [Dev Tools Domination效果](https://qinjingfei.github.io/JS30/09%20-%20Dev%20Tools%20Domination/index-jing.html)
 10 | [Hold Shift and Check Checkboxes指南](./notes/10.md) | [Hold Shift and Check Checkboxes效果](https://qinjingfei.github.io/JS30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-jing.html) 
+11 | [Custom Video Player指南](./notes/11.md) | [Custom Video Player效果](https://qinjingfei.github.io/JS30/11%20-%20Custom%20Video%20Player/index.html) 
 
